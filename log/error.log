@@ -1,0 +1,84 @@
+[Sun Jun 19 20:41:00 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/" (/).
+[Sun Jun 19 20:41:01 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[Sun Jun 19 20:41:01 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[Sun Jun 19 20:41:04 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/" (/).
+[Sun Jun 19 20:41:04 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[Sun Jun 19 20:41:05 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[Sun Jun 19 20:41:10 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/blog" (/).
+[Mon Jun 20 10:54:18 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[Mon Jun 20 10:54:19 2011] [error] [client 186.78.95.116] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[Mon Jun 20 16:38:15 2011] [error] [client 66.249.72.248] Empty module and/or action after parsing the URL "/" (/).
+[Tue Jun 21 12:30:55 2011] [error] [client 186.106.17.255] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[Tue Jun 21 12:30:55 2011] [error] [client 186.106.17.255] Empty module and/or action after parsing the URL "/favicon.ico" (/).
+[Tue Jun 21 12:45:18 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users
+[Tue Jun 21 12:45:19 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users
+[Tue Jun 21 12:45:21 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 12:45:23 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users/new
+[Tue Jun 21 12:47:12 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users/new
+[Tue Jun 21 12:47:13 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 12:48:08 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users/new
+[Tue Jun 21 12:48:13 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 12:48:17 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/category
+[Tue Jun 21 12:48:18 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 12:48:21 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/category/new
+[Tue Jun 21 12:48:33 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/category/1/edit
+[Tue Jun 21 12:48:34 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 12:48:37 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/tag
+[Tue Jun 21 12:48:38 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 12:48:40 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/tag/new
+[Tue Jun 21 12:48:52 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/tag/1/edit
+[Tue Jun 21 12:48:53 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 12:48:55 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/post?state=null
+[Tue Jun 21 12:49:01 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/post/new
+[Tue Jun 21 12:50:28 2011] [error] [client 186.78.86.131] Action "js/tiny_mce" does not exist., referer: http://repositorio.recytics.com/js/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+[Tue Jun 21 12:50:28 2011] [error] [client 186.78.86.131] Action "js/tiny_mce" does not exist., referer: http://repositorio.recytics.com/js/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+[Tue Jun 21 12:50:54 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 12:50:54 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 12:51:01 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/post
+[Tue Jun 21 12:51:03 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 12:51:03 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 12:51:05 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/blog/" (/)., referer: http://repositorio.recytics.com/adminBlog/post
+[Tue Jun 21 12:52:17 2011] [error] [client 186.106.17.255] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style_blog_fron.css
+[Tue Jun 21 12:52:34 2011] [error] [client 186.106.17.255] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style_blog_fron.css
+[Tue Jun 21 12:53:12 2011] [error] [client 186.106.17.255] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style_blog_fron.css
+[Tue Jun 21 13:00:20 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users
+[Tue Jun 21 13:00:22 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 13:00:26 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users/4/edit
+[Tue Jun 21 13:00:35 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users
+[Tue Jun 21 13:00:36 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 13:01:37 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users
+[Tue Jun 21 13:01:38 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 13:01:46 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users/4/edit
+[Tue Jun 21 13:03:50 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users/4/edit
+[Tue Jun 21 13:04:08 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/guard/users/4/edit
+[Tue Jun 21 13:04:08 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 13:07:45 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style_blog_fron.css
+[Tue Jun 21 13:08:45 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/comment?state=null
+[Tue Jun 21 13:08:46 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 13:08:55 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/comment/1/edit
+[Tue Jun 21 13:09:01 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/comment/1/edit
+[Tue Jun 21 13:09:02 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 14:16:39 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/post?state=null
+[Tue Jun 21 14:16:42 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 14:16:46 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/post/new
+[Tue Jun 21 14:17:58 2011] [error] [client 186.78.86.131] Action "js/tiny_mce" does not exist., referer: http://repositorio.recytics.com/js/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+[Tue Jun 21 14:17:58 2011] [error] [client 186.78.86.131] Action "js/tiny_mce" does not exist., referer: http://repositorio.recytics.com/js/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+[Tue Jun 21 14:18:35 2011] [error] [client 186.78.86.131] Action "js/tiny_mce" does not exist., referer: http://repositorio.recytics.com/js/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+[Tue Jun 21 14:18:35 2011] [error] [client 186.78.86.131] Action "js/tiny_mce" does not exist., referer: http://repositorio.recytics.com/js/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+[Tue Jun 21 14:18:50 2011] [error] [client 186.78.86.131] Action "js/tiny_mce" does not exist., referer: http://repositorio.recytics.com/js/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+[Tue Jun 21 14:18:50 2011] [error] [client 186.78.86.131] Action "js/tiny_mce" does not exist., referer: http://repositorio.recytics.com/js/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+[Tue Jun 21 14:19:04 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 14:19:04 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 14:19:15 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/post
+[Tue Jun 21 14:19:17 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 14:19:17 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 14:19:24 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/category
+[Tue Jun 21 14:19:25 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 14:19:27 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/category/new
+[Tue Jun 21 14:19:46 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/category/2/edit
+[Tue Jun 21 14:19:47 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css
+[Tue Jun 21 14:19:49 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/tag
+[Tue Jun 21 14:19:50 2011] [error] [client 186.78.86.131] Action "mpRealityAdminPlugin/images" does not exist., referer: http://repositorio.recytics.com/mpRealityAdminPlugin/css/modalBox.css
+[Tue Jun 21 14:19:53 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/tag/new
+[Tue Jun 21 14:20:00 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/js/.js" (/)., referer: http://repositorio.recytics.com/adminBlog/tag/2/edit
+[Tue Jun 21 14:20:00 2011] [error] [client 186.78.86.131] Empty module and/or action after parsing the URL "/images/error.png" (/)., referer: http://repositorio.recytics.com/css/style.css

@@ -1,0 +1,118 @@
+body {margin:0;padding:0;background-color: #eee;}
+a {color:#466773;}.clear {clear:both;}
+
+#blog-content, .post, #comment{
+    background: #EEE;
+    margin: 0 auto;
+    font-family: georgia, "times new roman", times, serif;
+}
+h1.underline {
+    background: url("http://1.bp.blogspot.com/_hljKDuw-cxQ/SN6oWkCGiKI/AAAAAAAAIBM/N9y_nnEW_yQ/s400/h1-underline.png") bottom left no-repeat;
+    font-family: georgia, "times new roman", times, serif;
+    font-weight: lighter;
+
+}
+h1.underline a, #slug h1.underline{
+    text-decoration: none;    
+}
+.post p ,#blog-content{
+    font-family: "trebuchet ms", verdana, sans-serif;
+    font-size: 0.9em;
+}
+
+#comment{
+    margin-top: 50px; 
+}
+.comment-content{
+    margin-top: 30px; 
+}
+#comment-new p.warning {
+    background: url("../images/warning.png") no-repeat scroll 0 0 transparent;
+    clear: left;
+}
+#comment-new p.warning {
+    color: #999999;
+    font-size: 0.7em;
+    padding: 0 0 0 23px;
+    width: 480px;
+    text-align: justify; 
+}
+#comment-new p.title {
+    color: #999999;
+    font-size: 1.1em;
+    padding: 0 0 0 23px;
+    width: 200px;
+    text-align: justify;
+}
+#comment_comment{
+    width: 500px;
+}
+#image-user{
+    width: 70px;
+    height: 70px;
+}
+label.error { 
+    background: url("../images/warning.png") no-repeat scroll 0 0 transparent;
+    float: none; 
+    color: red; 
+    padding-left: 1.5em; 
+    vertical-align: top;    
+}
+#comment-new table { 
+    width: 500px;
+}
+
+
+#wrapper {
+    width: 1024px;
+    margin: 0 auto;
+
+}
+#header {
+    float: none;
+    width: 100%;
+    height: 150px;
+    position: relative;
+	    background-image: url("../images/banner_proyectos.jpg");
+    background-repeat: no-repeat-x;
+}
+#menu{
+    margin: 0 auto;
+    width: 250px;
+    float: left;
+}
+#content {
+    float: right;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+#navigation {
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    padding-right: 30px;
+}
+#footer {
+    clear: both;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: #555555;
+    margin-top: 200px;
+}
+.error{
+    background: url("../images/error.png") no-repeat scroll 0 0 #FFCCCC;
+    border: 1px solid #FF0000;
+    border-radius: 5px 5px 5px 5px;
+    color: #000000;
+    float: left;
+    font-family: arial;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 3px 0;
+    padding: 10px 8px 7px 27px;
+    width: 97%;
+}

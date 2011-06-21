@@ -1,0 +1,1351 @@
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:13:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 20:13:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:13:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:13:35 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 20:13:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 20:13:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 20:13:35 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 20:13:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 20:13:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 20:13:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 20:13:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 20:13:35 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:13:35 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:13:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 20:13:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:13:35 symfony [info] {sfWebDebugLogger} Configuration 238.50 ms (10)
+Jun 09 20:13:35 symfony [info] {sfWebDebugLogger} Factories 183.35 ms (1)
+Jun 09 20:13:35 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 92.45 ms (1)
+Jun 09 20:13:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 20:13:35 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 36.24 ms (1)
+Jun 09 20:13:35 symfony [info] {sfWebResponse} Send content (52647 o)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:13:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 20:13:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:13:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:13:43 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 20:13:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 20:13:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 20:13:43 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 20:13:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 20:13:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 20:13:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 20:13:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 20:13:43 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:13:43 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:13:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 20:13:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:13:43 symfony [info] {sfWebDebugLogger} Configuration 75.05 ms (11)
+Jun 09 20:13:43 symfony [info] {sfWebDebugLogger} Factories 17.87 ms (1)
+Jun 09 20:13:43 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 93.75 ms (1)
+Jun 09 20:13:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+Jun 09 20:13:43 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 32.09 ms (1)
+Jun 09 20:13:43 symfony [info] {sfWebResponse} Send content (52646 o)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:25:56 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 20:25:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:25:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:25:56 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 20:25:56 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/indexSuccess.php"
+Jun 09 20:25:56 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/_form.php"
+Jun 09 20:25:57 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:25:57 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:25:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 20:25:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:25:57 symfony [info] {sfWebDebugLogger} Configuration 12.89 ms (10)
+Jun 09 20:25:57 symfony [info] {sfWebDebugLogger} Factories 20.39 ms (1)
+Jun 09 20:25:57 symfony [info] {sfWebDebugLogger} Action "Register/index" 11.81 ms (1)
+Jun 09 20:25:57 symfony [info] {sfWebDebugLogger} View "Success" for "Register/index" 12.74 ms (1)
+Jun 09 20:25:57 symfony [info] {sfWebDebugLogger} Partial "Register/_form" 4.12 ms (1)
+Jun 09 20:25:57 symfony [info] {sfWebResponse} Send content (42644 o)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:26:23 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 20:26:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:26:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:26:23 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 20:26:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 20:26:23 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 20:26:23 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO client (first_name, last_name, email_address, address, number, city, commune, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (qqqqqq, qqqqqqqqq, qqqqqqq, qqqqqqqqq, qq, qqqqqqqq, qqqqqqqqqqq, qqqqqqqq, qqqqqqqq)
+Jun 09 20:26:23 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_user (algorithm, is_active, is_super_admin, first_name, last_name, email_address, username, salt, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (sha1, 0, 0, qqqqqq, qqqqqqqqq, qqqqqqq, qqqqqqqq, c7f085ce3b03a250155257b3587c99cf, 55f2a7fa749cedd978d5fb410071ea9f00c54e2b, 2011-06-09 20:26:23, 2011-06-09 20:26:23)
+Jun 09 20:26:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.first_name AS c__first_name, c.last_name AS c__last_name, c.email_address AS c__email_address, c.address AS c__address, c.number AS c__number, c.city AS c__city, c.commune AS c__commune, c.username AS c__username, c.password AS c__password, c.user_id AS c__user_id FROM client c WHERE (c.id = ?) LIMIT 1 - (4)
+Jun 09 20:26:23 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE client SET user_id = ? WHERE id = ? - (5, 4)
+Jun 09 20:26:23 symfony [info] {myUser} User is authenticated
+Jun 09 20:26:23 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "all_permission_names" on "Client"
+Jun 09 20:26:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 09 20:26:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:26:23 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (8)
+Jun 09 20:26:23 symfony [info] {sfWebDebugLogger} Factories 26.40 ms (1)
+Jun 09 20:26:23 symfony [info] {sfWebDebugLogger} Action "Register/index" 197.61 ms (1)
+Jun 09 20:26:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 20:50:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:50:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:50:32 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 20:50:32 symfony [info] {sfFrontWebController} Redirect to "http://shimano.localhost/index.php/"
+Jun 09 20:50:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 09 20:50:32 symfony [info] {sfWebResponse} Send header "Location: http://shimano.localhost/index.php/"
+Jun 09 20:50:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:50:32 symfony [info] {sfWebDebugLogger} Configuration 1.64 ms (8)
+Jun 09 20:50:32 symfony [info] {sfWebDebugLogger} Factories 17.95 ms (1)
+Jun 09 20:50:32 symfony [info] {sfWebDebugLogger} Action "Register/index" 1.32 ms (1)
+Jun 09 20:50:32 symfony [info] {sfWebResponse} Send content (106 o)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:50:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 20:50:32 symfony [info] {myUser} Flag old flash messages ("notice")
+Jun 09 20:50:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:50:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:50:32 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 20:50:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 20:50:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 20:50:33 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 20:50:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 20:50:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 20:50:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 20:50:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 20:50:33 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:50:33 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:50:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 20:50:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:50:33 symfony [info] {sfWebDebugLogger} Configuration 75.10 ms (11)
+Jun 09 20:50:33 symfony [info] {sfWebDebugLogger} Factories 18.37 ms (1)
+Jun 09 20:50:33 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 95.22 ms (1)
+Jun 09 20:50:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 20:50:33 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 33.06 ms (1)
+Jun 09 20:50:33 symfony [info] {sfWebResponse} Send content (53453 o)
+Jun 09 20:50:33 symfony [info] {myUser} Remove old flash messages ("notice")
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 20:50:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:50:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:50:38 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 20:50:38 symfony [info] {sfFrontWebController} Redirect to "http://shimano.localhost/index.php/"
+Jun 09 20:50:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 09 20:50:38 symfony [info] {sfWebResponse} Send header "Location: http://shimano.localhost/index.php/"
+Jun 09 20:50:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:50:38 symfony [info] {sfWebDebugLogger} Configuration 1.64 ms (8)
+Jun 09 20:50:38 symfony [info] {sfWebDebugLogger} Factories 17.19 ms (1)
+Jun 09 20:50:38 symfony [info] {sfWebDebugLogger} Action "Register/index" 1.02 ms (1)
+Jun 09 20:50:38 symfony [info] {sfWebResponse} Send content (106 o)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:50:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:50:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:50:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 20:50:39 symfony [info] {myUser} Flag old flash messages ("notice")
+Jun 09 20:50:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:50:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:50:39 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 20:50:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 20:50:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 20:50:39 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 20:50:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 20:50:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 20:50:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 20:50:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 20:50:39 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:50:39 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:50:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 20:50:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:50:39 symfony [info] {sfWebDebugLogger} Configuration 75.45 ms (11)
+Jun 09 20:50:39 symfony [info] {sfWebDebugLogger} Factories 20.33 ms (1)
+Jun 09 20:50:39 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 95.63 ms (1)
+Jun 09 20:50:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+Jun 09 20:50:39 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 33.54 ms (1)
+Jun 09 20:50:39 symfony [info] {sfWebResponse} Send content (53413 o)
+Jun 09 20:50:39 symfony [info] {myUser} Remove old flash messages ("notice")
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 20:50:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:50:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:50:42 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 20:50:42 symfony [info] {sfFrontWebController} Redirect to "http://shimano.localhost/index.php/"
+Jun 09 20:50:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 09 20:50:42 symfony [info] {sfWebResponse} Send header "Location: http://shimano.localhost/index.php/"
+Jun 09 20:50:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:50:42 symfony [info] {sfWebDebugLogger} Configuration 1.78 ms (8)
+Jun 09 20:50:42 symfony [info] {sfWebDebugLogger} Factories 17.74 ms (1)
+Jun 09 20:50:42 symfony [info] {sfWebDebugLogger} Action "Register/index" 1.04 ms (1)
+Jun 09 20:50:42 symfony [info] {sfWebResponse} Send content (106 o)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:50:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 20:50:42 symfony [info] {myUser} Flag old flash messages ("notice")
+Jun 09 20:50:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:50:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:50:42 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 20:50:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 20:50:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 20:50:42 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 20:50:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 20:50:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 20:50:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 20:50:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 20:50:42 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:50:42 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:50:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 20:50:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:50:42 symfony [info] {sfWebDebugLogger} Configuration 74.77 ms (11)
+Jun 09 20:50:42 symfony [info] {sfWebDebugLogger} Factories 17.53 ms (1)
+Jun 09 20:50:42 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 92.97 ms (1)
+Jun 09 20:50:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 20:50:42 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 31.93 ms (1)
+Jun 09 20:50:42 symfony [info] {sfWebResponse} Send content (53413 o)
+Jun 09 20:50:42 symfony [info] {myUser} Remove old flash messages ("notice")
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 20:53:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 20:53:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:53:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:53:11 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 20:53:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 20:53:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 20:53:11 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 20:53:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 20:53:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 20:53:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 20:53:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 20:53:11 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 20:53:11 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:08:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:08:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:08:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:08:51 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:08:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:08:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:08:51 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:08:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:08:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:08:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:08:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:08:51 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:08:51 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:08:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:08:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:08:51 symfony [info] {sfWebDebugLogger} Configuration 74.63 ms (11)
+Jun 09 21:08:51 symfony [info] {sfWebDebugLogger} Factories 17.01 ms (1)
+Jun 09 21:08:51 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 92.65 ms (1)
+Jun 09 21:08:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 21:08:51 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 32.49 ms (1)
+Jun 09 21:08:51 symfony [info] {sfWebResponse} Send content (53017 o)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:11:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:11:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:11:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:11:16 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:11:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:11:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:11:16 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:11:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:11:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:11:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:11:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:11:16 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:11:16 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:11:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:11:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:11:16 symfony [info] {sfWebDebugLogger} Configuration 89.11 ms (11)
+Jun 09 21:11:16 symfony [info] {sfWebDebugLogger} Factories 29.50 ms (1)
+Jun 09 21:11:16 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 111.32 ms (1)
+Jun 09 21:11:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 21:11:16 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 34.94 ms (1)
+Jun 09 21:11:16 symfony [info] {sfWebResponse} Send content (52851 o)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:11:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:11:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:11:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:11:26 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:11:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:11:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:11:26 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:11:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:11:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:11:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:11:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:11:26 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:11:26 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:11:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:11:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:11:26 symfony [info] {sfWebDebugLogger} Configuration 75.69 ms (11)
+Jun 09 21:11:26 symfony [info] {sfWebDebugLogger} Factories 18.19 ms (1)
+Jun 09 21:11:26 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 94.20 ms (1)
+Jun 09 21:11:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 21:11:26 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 32.87 ms (1)
+Jun 09 21:11:26 symfony [info] {sfWebResponse} Send content (52849 o)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Match route "sf_guard_signout" (/logout) for /logout with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signout',)
+Jun 09 21:11:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:11:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:11:28 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignout()"
+Jun 09 21:11:28 symfony [info] {myUser} User is not authenticated
+Jun 09 21:11:28 symfony [info] {sfFrontWebController} Redirect to "http://shimano.localhost/index.php/"
+Jun 09 21:11:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 09 21:11:28 symfony [info] {sfWebResponse} Send header "Location: http://shimano.localhost/index.php/"
+Jun 09 21:11:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:11:28 symfony [info] {sfWebResponse} Send cookie "sfRemember": ""
+Jun 09 21:11:28 symfony [info] {sfWebDebugLogger} Configuration 11.64 ms (9)
+Jun 09 21:11:28 symfony [info] {sfWebDebugLogger} Factories 16.88 ms (1)
+Jun 09 21:11:28 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signout" 1.16 ms (1)
+Jun 09 21:11:28 symfony [info] {sfWebResponse} Send content (106 o)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:11:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:11:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:11:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:11:28 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:11:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:11:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:11:28 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:11:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:11:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:11:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:11:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:11:28 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:11:28 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:11:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:11:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:11:28 symfony [info] {sfWebDebugLogger} Configuration 74.49 ms (11)
+Jun 09 21:11:28 symfony [info] {sfWebDebugLogger} Factories 17.02 ms (1)
+Jun 09 21:11:28 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 93.00 ms (1)
+Jun 09 21:11:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 21:11:28 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 32.00 ms (1)
+Jun 09 21:11:28 symfony [info] {sfWebResponse} Send content (52719 o)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:12:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:12:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:12:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:12:09 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:12:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:12:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:12:09 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:12:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:12:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:12:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:12:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:12:09 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:12:09 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:12:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:12:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:12:09 symfony [info] {sfWebDebugLogger} Configuration 75.56 ms (11)
+Jun 09 21:12:09 symfony [info] {sfWebDebugLogger} Factories 23.04 ms (1)
+Jun 09 21:12:09 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 95.04 ms (1)
+Jun 09 21:12:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 21:12:09 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 38.28 ms (1)
+Jun 09 21:12:09 symfony [info] {sfWebResponse} Send content (52668 o)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:12:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:12:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:12:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:12:37 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:12:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:12:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:12:37 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:12:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:12:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:12:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:12:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:12:37 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:12:37 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:12:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:12:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:12:37 symfony [info] {sfWebDebugLogger} Configuration 75.48 ms (11)
+Jun 09 21:12:37 symfony [info] {sfWebDebugLogger} Factories 20.94 ms (1)
+Jun 09 21:12:37 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 94.58 ms (1)
+Jun 09 21:12:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 21:12:37 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 33.52 ms (1)
+Jun 09 21:12:37 symfony [info] {sfWebResponse} Send content (52736 o)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:17:57 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 21:17:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:17:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:17:57 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 21:17:57 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/indexSuccess.php"
+Jun 09 21:17:57 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/_form.php"
+Jun 09 21:17:57 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:17:57 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:17:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:17:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:17:57 symfony [info] {sfWebDebugLogger} Configuration 2.01 ms (9)
+Jun 09 21:17:57 symfony [info] {sfWebDebugLogger} Factories 18.39 ms (1)
+Jun 09 21:17:57 symfony [info] {sfWebDebugLogger} Action "Register/index" 14.85 ms (1)
+Jun 09 21:17:57 symfony [info] {sfWebDebugLogger} View "Success" for "Register/index" 9.80 ms (1)
+Jun 09 21:17:57 symfony [info] {sfWebDebugLogger} Partial "Register/_form" 3.96 ms (1)
+Jun 09 21:17:57 symfony [info] {sfWebResponse} Send content (42620 o)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:18:04 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 21:18:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:18:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:18:04 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 21:18:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:18:04 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:18:04 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO client (first_name, last_name, email_address, address, number, city, commune, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (7, 7, 7, 7, 7, 7, 7, 7, 7)
+Jun 09 21:18:04 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_user (algorithm, is_active, is_super_admin, first_name, last_name, email_address, username, salt, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (sha1, 0, 0, 7, 7, 7, 7, e195e90bc93bb13d2928147a2802b2ee, 468883f8f6aac77d8e56b8cbb323f220b691cb1b, 2011-06-09 21:18:04, 2011-06-09 21:18:04)
+Jun 09 21:18:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.first_name AS c__first_name, c.last_name AS c__last_name, c.email_address AS c__email_address, c.address AS c__address, c.number AS c__number, c.city AS c__city, c.commune AS c__commune, c.username AS c__username, c.password AS c__password, c.user_id AS c__user_id FROM client c WHERE (c.id = ?) LIMIT 1 - (1)
+Jun 09 21:18:04 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE client SET user_id = ? WHERE id = ? - (3, 1)
+Jun 09 21:18:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_permission s WHERE (s.name = ?) LIMIT 1 - (Cliente)
+Jun 09 21:18:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_user_permission (user_id, permission_id, created_at, updated_at) VALUES (?, ?, ?, ?) - (3, 5, 2011-06-09 21:18:05, 2011-06-09 21:18:05)
+Jun 09 21:18:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (3)
+Jun 09 21:18:05 symfony [info] {myUser} User is authenticated
+Jun 09 21:18:05 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "all_permission_names" on "Client"
+Jun 09 21:18:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 09 21:18:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:18:05 symfony [info] {sfWebDebugLogger} Configuration 6.84 ms (8)
+Jun 09 21:18:05 symfony [info] {sfWebDebugLogger} Factories 36.19 ms (1)
+Jun 09 21:18:05 symfony [info] {sfWebDebugLogger} Action "Register/index" 228.76 ms (1)
+Jun 09 21:18:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (9)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:19:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:19:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:19:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:19:43 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:19:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:19:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:19:43 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:19:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:19:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:19:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:19:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:19:43 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:19:43 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:19:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:19:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:19:43 symfony [info] {sfWebDebugLogger} Configuration 75.16 ms (11)
+Jun 09 21:19:43 symfony [info] {sfWebDebugLogger} Factories 18.86 ms (1)
+Jun 09 21:19:43 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 93.30 ms (1)
+Jun 09 21:19:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+Jun 09 21:19:43 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 31.49 ms (1)
+Jun 09 21:19:43 symfony [info] {sfWebResponse} Send content (52683 o)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:19:53 symfony [info] {sfPatternRouting} Match route "b_post" (/ver_post/:slug.html) for /ver_post/prueba-1.html with parameters array (  'module' => 'ViewPost',  'action' => 'show',  'slug' => 'prueba-1',)
+Jun 09 21:19:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:19:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:19:53 symfony [info] {ViewPostActions} Call "ViewPostActions->executeShow()"
+Jun 09 21:19:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.slug = ?) LIMIT 1 - (prueba-1)
+Jun 09 21:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.state = ? AND c.post_id = ?) - (Publicado, 1)
+Jun 09 21:19:53 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:19:53 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO visit (ip, date, post_id) VALUES (?, ?, ?) - (127.0.0.1, 2011-06-09, 1)
+Jun 09 21:19:53 symfony [err] {sfException} Call to undefined method myUser::getsfGuadUser.
+Jun 09 21:19:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 09 21:19:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:19:53 symfony [info] {sfWebDebugLogger} Configuration 76.26 ms (10)
+Jun 09 21:19:53 symfony [info] {sfWebDebugLogger} Factories 19.00 ms (1)
+Jun 09 21:19:53 symfony [info] {sfWebDebugLogger} Action "ViewPost/show" 273.08 ms (1)
+Jun 09 21:19:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (5)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:20:24 symfony [info] {sfPatternRouting} Match route "b_post" (/ver_post/:slug.html) for /ver_post/prueba-1.html with parameters array (  'module' => 'ViewPost',  'action' => 'show',  'slug' => 'prueba-1',)
+Jun 09 21:20:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:20:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:20:24 symfony [info] {ViewPostActions} Call "ViewPostActions->executeShow()"
+Jun 09 21:20:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:20:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.slug = ?) LIMIT 1 - (prueba-1)
+Jun 09 21:20:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.state = ? AND c.post_id = ?) - (Publicado, 1)
+Jun 09 21:20:24 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:20:24 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO visit (ip, date, post_id) VALUES (?, ?, ?) - (127.0.0.1, 2011-06-09, 1)
+Jun 09 21:20:24 symfony [err] {sfException} Call to undefined method myUser::getGuadUser.
+Jun 09 21:20:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 09 21:20:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:20:24 symfony [info] {sfWebDebugLogger} Configuration 79.87 ms (10)
+Jun 09 21:20:24 symfony [info] {sfWebDebugLogger} Factories 22.21 ms (1)
+Jun 09 21:20:24 symfony [info] {sfWebDebugLogger} Action "ViewPost/show" 213.63 ms (1)
+Jun 09 21:20:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (5)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:20:37 symfony [info] {sfPatternRouting} Match route "b_post" (/ver_post/:slug.html) for /ver_post/prueba-1.html with parameters array (  'module' => 'ViewPost',  'action' => 'show',  'slug' => 'prueba-1',)
+Jun 09 21:20:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:20:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:20:37 symfony [info] {ViewPostActions} Call "ViewPostActions->executeShow()"
+Jun 09 21:20:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:20:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.slug = ?) LIMIT 1 - (prueba-1)
+Jun 09 21:20:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.state = ? AND c.post_id = ?) - (Publicado, 1)
+Jun 09 21:20:37 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:20:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO visit (ip, date, post_id) VALUES (?, ?, ?) - (127.0.0.1, 2011-06-09, 1)
+Jun 09 21:20:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Jun 09 21:20:37 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "email" on "sfGuardUser"
+Jun 09 21:20:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 09 21:20:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:20:37 symfony [info] {sfWebDebugLogger} Configuration 75.48 ms (10)
+Jun 09 21:20:37 symfony [info] {sfWebDebugLogger} Factories 20.82 ms (1)
+Jun 09 21:20:37 symfony [info] {sfWebDebugLogger} Action "ViewPost/show" 360.97 ms (1)
+Jun 09 21:20:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:20:52 symfony [info] {sfPatternRouting} Match route "b_post" (/ver_post/:slug.html) for /ver_post/prueba-1.html with parameters array (  'module' => 'ViewPost',  'action' => 'show',  'slug' => 'prueba-1',)
+Jun 09 21:20:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:20:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:20:52 symfony [info] {ViewPostActions} Call "ViewPostActions->executeShow()"
+Jun 09 21:20:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:20:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.slug = ?) LIMIT 1 - (prueba-1)
+Jun 09 21:20:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.state = ? AND c.post_id = ?) - (Publicado, 1)
+Jun 09 21:20:52 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:20:52 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO visit (ip, date, post_id) VALUES (?, ?, ?) - (127.0.0.1, 2011-06-09, 1)
+Jun 09 21:20:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Jun 09 21:20:53 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/showSuccess.php"
+Jun 09 21:20:53 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/_form.php"
+Jun 09 21:20:53 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:20:53 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:20:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:20:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:20:53 symfony [info] {sfWebDebugLogger} Configuration 96.27 ms (11)
+Jun 09 21:20:53 symfony [info] {sfWebDebugLogger} Factories 71.83 ms (1)
+Jun 09 21:20:53 symfony [info] {sfWebDebugLogger} Action "ViewPost/show" 238.89 ms (1)
+Jun 09 21:20:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+Jun 09 21:20:53 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/show" 91.78 ms (1)
+Jun 09 21:20:53 symfony [info] {sfWebDebugLogger} Partial "ViewPost/_form" 57.32 ms (1)
+Jun 09 21:20:53 symfony [info] {sfWebResponse} Send content (59881 o)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Match route "sf_guard_signout" (/logout) for /logout with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signout',)
+Jun 09 21:23:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:23:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:23:09 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignout()"
+Jun 09 21:23:09 symfony [info] {myUser} User is not authenticated
+Jun 09 21:23:09 symfony [info] {sfFrontWebController} Redirect to "http://shimano.localhost/index.php/ver_post/prueba-1.html"
+Jun 09 21:23:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 09 21:23:09 symfony [info] {sfWebResponse} Send header "Location: http://shimano.localhost/index.php/ver_post/prueba-1.html"
+Jun 09 21:23:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:23:09 symfony [info] {sfWebResponse} Send cookie "sfRemember": ""
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} Configuration 1.74 ms (8)
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} Factories 20.55 ms (1)
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signout" 1.17 ms (1)
+Jun 09 21:23:09 symfony [info] {sfWebResponse} Send content (128 o)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:23:09 symfony [info] {sfPatternRouting} Match route "b_post" (/ver_post/:slug.html) for /ver_post/prueba-1.html with parameters array (  'module' => 'ViewPost',  'action' => 'show',  'slug' => 'prueba-1',)
+Jun 09 21:23:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:23:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:23:09 symfony [info] {ViewPostActions} Call "ViewPostActions->executeShow()"
+Jun 09 21:23:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:23:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.slug = ?) LIMIT 1 - (prueba-1)
+Jun 09 21:23:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.state = ? AND c.post_id = ?) - (Publicado, 1)
+Jun 09 21:23:09 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:23:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO visit (ip, date, post_id) VALUES (?, ?, ?) - (127.0.0.1, 2011-06-09, 1)
+Jun 09 21:23:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ?) LIMIT 1 - (visita)
+Jun 09 21:23:09 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/showSuccess.php"
+Jun 09 21:23:09 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/_form.php"
+Jun 09 21:23:09 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:23:09 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:23:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:23:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} Configuration 74.67 ms (11)
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} Factories 18.35 ms (1)
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} Action "ViewPost/show" 224.28 ms (1)
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (6)
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/show" 10.77 ms (1)
+Jun 09 21:23:09 symfony [info] {sfWebDebugLogger} Partial "ViewPost/_form" 3.19 ms (1)
+Jun 09 21:23:09 symfony [info] {sfWebResponse} Send content (59769 o)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:23:11 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 21:23:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:23:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:23:11 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 21:23:11 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/indexSuccess.php"
+Jun 09 21:23:11 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/_form.php"
+Jun 09 21:23:11 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:23:11 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:23:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:23:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:23:11 symfony [info] {sfWebDebugLogger} Configuration 2.57 ms (9)
+Jun 09 21:23:11 symfony [info] {sfWebDebugLogger} Factories 18.12 ms (1)
+Jun 09 21:23:11 symfony [info] {sfWebDebugLogger} Action "Register/index" 11.02 ms (1)
+Jun 09 21:23:11 symfony [info] {sfWebDebugLogger} View "Success" for "Register/index" 10.14 ms (1)
+Jun 09 21:23:11 symfony [info] {sfWebDebugLogger} Partial "Register/_form" 4.20 ms (1)
+Jun 09 21:23:11 symfony [info] {sfWebResponse} Send content (42643 o)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:23:18 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 21:23:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:23:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:23:18 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 21:23:18 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/indexSuccess.php"
+Jun 09 21:23:18 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/_form.php"
+Jun 09 21:23:18 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:23:18 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:23:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:23:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:23:18 symfony [info] {sfWebDebugLogger} Configuration 1.95 ms (9)
+Jun 09 21:23:18 symfony [info] {sfWebDebugLogger} Factories 36.42 ms (1)
+Jun 09 21:23:18 symfony [info] {sfWebDebugLogger} Action "Register/index" 13.64 ms (1)
+Jun 09 21:23:18 symfony [info] {sfWebDebugLogger} View "Success" for "Register/index" 9.29 ms (1)
+Jun 09 21:23:18 symfony [info] {sfWebDebugLogger} Partial "Register/_form" 4.12 ms (1)
+Jun 09 21:23:18 symfony [info] {sfWebResponse} Send content (43769 o)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:24:08 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 21:24:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:24:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:24:08 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO client (first_name, last_name, email_address, address, number, city, commune, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (p, p, p, p, p, p, p, p, p)
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_user (algorithm, is_active, is_super_admin, first_name, last_name, email_address, username, salt, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (sha1, 0, 0, p, p, p, p, 4587f09d4f1f68dfb7d1a30a65400144, 4cf7c0d0b853729d0d65377c1b7452341883d1f4, 2011-06-09 21:24:09, 2011-06-09 21:24:09)
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.first_name AS c__first_name, c.last_name AS c__last_name, c.email_address AS c__email_address, c.address AS c__address, c.number AS c__number, c.city AS c__city, c.commune AS c__commune, c.username AS c__username, c.password AS c__password, c.user_id AS c__user_id FROM client c WHERE (c.id = ?) LIMIT 1 - (2)
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE client SET user_id = ? WHERE id = ? - (4, 2)
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_permission s WHERE (s.name = ?) LIMIT 1 - (Cliente)
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_user_permission (user_id, permission_id, created_at, updated_at) VALUES (?, ?, ?, ?) - (4, 5, 2011-06-09 21:24:09, 2011-06-09 21:24:09)
+Jun 09 21:24:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (4)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 21:24:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:24:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:24:20 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO client (first_name, last_name, email_address, address, number, city, commune, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (p, p, p, p, p, p, p, p, p)
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_user (algorithm, is_active, is_super_admin, first_name, last_name, email_address, username, salt, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (sha1, 0, 0, p, p, p, p, 99c56f1c8295834e5f14761593edd152, 83e1cabac88575576e1bd1e5902aa89808c59e29, 2011-06-09 21:24:20, 2011-06-09 21:24:20)
+Jun 09 21:24:20 symfony [info] {sfFrontWebController} Redirect to "http://shimano.localhost/index.php/"
+Jun 09 21:24:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 09 21:24:20 symfony [info] {sfWebResponse} Send header "Location: http://shimano.localhost/index.php/"
+Jun 09 21:24:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} Configuration 1.77 ms (8)
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} Factories 18.22 ms (1)
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} Action "Register/index" 69.23 ms (1)
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Jun 09 21:24:20 symfony [info] {sfWebResponse} Send content (106 o)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:24:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:24:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:24:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:24:20 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:24:20 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:24:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:24:20 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:24:20 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:24:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:24:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} Configuration 76.28 ms (11)
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} Factories 20.78 ms (1)
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 97.13 ms (1)
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (6)
+Jun 09 21:24:20 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 39.65 ms (1)
+Jun 09 21:24:21 symfony [info] {sfWebResponse} Send content (52744 o)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:28:03 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 21:28:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:28:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:28:03 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 21:28:03 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/indexSuccess.php"
+Jun 09 21:28:03 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/_form.php"
+Jun 09 21:28:03 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:28:03 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:28:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:28:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:28:03 symfony [info] {sfWebDebugLogger} Configuration 44.37 ms (10)
+Jun 09 21:28:03 symfony [info] {sfWebDebugLogger} Factories 60.85 ms (1)
+Jun 09 21:28:03 symfony [info] {sfWebDebugLogger} Action "Register/index" 10.47 ms (1)
+Jun 09 21:28:03 symfony [info] {sfWebDebugLogger} View "Success" for "Register/index" 9.33 ms (1)
+Jun 09 21:28:03 symfony [info] {sfWebDebugLogger} Partial "Register/_form" 4.04 ms (1)
+Jun 09 21:28:03 symfony [info] {sfWebResponse} Send content (42622 o)
+Jun 09 21:28:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:28:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:28:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:28:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:28:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:28:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Match route "register" (/register) for /register with parameters array (  'module' => 'Register',  'action' => 'index',)
+Jun 09 21:28:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:28:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:28:09 symfony [info] {RegisterActions} Call "RegisterActions->executeIndex()"
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Mysql} query : SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE - ()
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO client (first_name, last_name, email_address, address, number, city, commune, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (o, o, o, o, o, o, o, o, o)
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_user (algorithm, is_active, is_super_admin, first_name, last_name, email_address, username, salt, password, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (sha1, 0, 0, o, o, o, o, 177f279d831841e48df409bf7bdfb32a, 89256132d245ab47eff4fe318d5cece9c41c72f5, 2011-06-09 21:28:09, 2011-06-09 21:28:09)
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.first_name AS c__first_name, c.last_name AS c__last_name, c.email_address AS c__email_address, c.address AS c__address, c.number AS c__number, c.city AS c__city, c.commune AS c__commune, c.username AS c__username, c.password AS c__password, c.user_id AS c__user_id FROM client c WHERE (c.id = ?) LIMIT 1 - (4)
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE client SET user_id = ? WHERE id = ? - (6, 4)
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_permission s WHERE (s.name = ?) LIMIT 1 - (Cliente)
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_user_permission (user_id, permission_id, created_at, updated_at) VALUES (?, ?, ?, ?) - (6, 5, 2011-06-09 21:28:09, 2011-06-09 21:28:09)
+Jun 09 21:28:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (6)
+Jun 09 21:28:09 symfony [info] {sfFrontWebController} Redirect to "http://shimano.localhost/index.php/register_success"
+Jun 09 21:28:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jun 09 21:28:09 symfony [info] {sfWebResponse} Send header "Location: http://shimano.localhost/index.php/register_success"
+Jun 09 21:28:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} Configuration 11.85 ms (8)
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} Factories 58.35 ms (1)
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} Action "Register/index" 121.15 ms (1)
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (9)
+Jun 09 21:28:09 symfony [info] {sfWebResponse} Send content (122 o)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:28:09 symfony [info] {sfPatternRouting} Match route "register_success" (/register_success) for /register_success with parameters array (  'module' => 'Register',  'action' => 'success',)
+Jun 09 21:28:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:28:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:28:09 symfony [info] {RegisterActions} Call "RegisterActions->executeSuccess()"
+Jun 09 21:28:09 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php"
+Jun 09 21:28:09 symfony [notice] {sfWebDebugLogger}  Notice at /home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php on line 3 (Undefined variable: form)
+Jun 09 21:28:09 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/_form.php"
+Jun 09 21:28:09 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:28:09 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:28:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:28:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} Configuration 2.43 ms (9)
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} Factories 17.75 ms (1)
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} Action "Register/success" 0.14 ms (1)
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} View "Success" for "Register/success" 6.90 ms (1)
+Jun 09 21:28:09 symfony [info] {sfWebDebugLogger} Partial "Register/_form" 0.85 ms (1)
+Jun 09 21:28:09 symfony [info] {sfWebResponse} Send content (36774 o)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:28:42 symfony [info] {sfPatternRouting} Match route "register_success" (/register_success) for /register_success with parameters array (  'module' => 'Register',  'action' => 'success',)
+Jun 09 21:28:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:28:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:28:42 symfony [info] {RegisterActions} Call "RegisterActions->executeSuccess()"
+Jun 09 21:28:42 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php"
+Jun 09 21:28:42 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:28:42 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:28:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:28:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:28:42 symfony [info] {sfWebDebugLogger} Configuration 2.63 ms (9)
+Jun 09 21:28:42 symfony [info] {sfWebDebugLogger} Factories 17.48 ms (1)
+Jun 09 21:28:42 symfony [info] {sfWebDebugLogger} Action "Register/success" 0.13 ms (1)
+Jun 09 21:28:42 symfony [info] {sfWebDebugLogger} View "Success" for "Register/success" 5.39 ms (1)
+Jun 09 21:28:42 symfony [info] {sfWebResponse} Send content (35208 o)
+Jun 09 21:29:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:29:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:29:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:29:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:29:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:29:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:29:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:29:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:29:13 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:29:13 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:29:13 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:29:13 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:29:13 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:29:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:29:13 symfony [info] {sfPatternRouting} Match route "register_success" (/register_success) for /register_success with parameters array (  'module' => 'Register',  'action' => 'success',)
+Jun 09 21:29:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:29:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:29:13 symfony [info] {RegisterActions} Call "RegisterActions->executeSuccess()"
+Jun 09 21:29:13 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php"
+Jun 09 21:29:13 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:29:13 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:29:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:29:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:29:13 symfony [info] {sfWebDebugLogger} Configuration 2.42 ms (9)
+Jun 09 21:29:13 symfony [info] {sfWebDebugLogger} Factories 23.70 ms (1)
+Jun 09 21:29:13 symfony [info] {sfWebDebugLogger} Action "Register/success" 0.20 ms (1)
+Jun 09 21:29:13 symfony [info] {sfWebDebugLogger} View "Success" for "Register/success" 53.48 ms (1)
+Jun 09 21:29:13 symfony [info] {sfWebResponse} Send content (35218 o)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:30:10 symfony [info] {sfPatternRouting} Match route "register_success" (/register_success) for /register_success with parameters array (  'module' => 'Register',  'action' => 'success',)
+Jun 09 21:30:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:30:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:30:10 symfony [info] {RegisterActions} Call "RegisterActions->executeSuccess()"
+Jun 09 21:30:10 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php"
+Jun 09 21:30:10 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:30:10 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:30:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:30:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:30:10 symfony [info] {sfWebDebugLogger} Configuration 1.91 ms (9)
+Jun 09 21:30:10 symfony [info] {sfWebDebugLogger} Factories 17.34 ms (1)
+Jun 09 21:30:10 symfony [info] {sfWebDebugLogger} Action "Register/success" 0.13 ms (1)
+Jun 09 21:30:10 symfony [info] {sfWebDebugLogger} View "Success" for "Register/success" 5.00 ms (1)
+Jun 09 21:30:10 symfony [info] {sfWebResponse} Send content (35284 o)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:30:39 symfony [info] {sfPatternRouting} Match route "register_success" (/register_success) for /register_success with parameters array (  'module' => 'Register',  'action' => 'success',)
+Jun 09 21:30:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:30:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:30:39 symfony [info] {RegisterActions} Call "RegisterActions->executeSuccess()"
+Jun 09 21:30:39 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php"
+Jun 09 21:30:39 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:30:39 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:30:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:30:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:30:39 symfony [info] {sfWebDebugLogger} Configuration 1.91 ms (9)
+Jun 09 21:30:39 symfony [info] {sfWebDebugLogger} Factories 16.87 ms (1)
+Jun 09 21:30:39 symfony [info] {sfWebDebugLogger} Action "Register/success" 0.13 ms (1)
+Jun 09 21:30:39 symfony [info] {sfWebDebugLogger} View "Success" for "Register/success" 4.84 ms (1)
+Jun 09 21:30:39 symfony [info] {sfWebResponse} Send content (35302 o)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:32:36 symfony [info] {sfPatternRouting} Match route "register_success" (/register_success) for /register_success with parameters array (  'module' => 'Register',  'action' => 'success',)
+Jun 09 21:32:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:32:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:32:36 symfony [info] {RegisterActions} Call "RegisterActions->executeSuccess()"
+Jun 09 21:32:36 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php"
+Jun 09 21:32:36 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:32:36 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:32:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:32:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:32:36 symfony [info] {sfWebDebugLogger} Configuration 4.47 ms (9)
+Jun 09 21:32:36 symfony [info] {sfWebDebugLogger} Factories 28.65 ms (1)
+Jun 09 21:32:36 symfony [info] {sfWebDebugLogger} Action "Register/success" 0.12 ms (1)
+Jun 09 21:32:36 symfony [info] {sfWebDebugLogger} View "Success" for "Register/success" 7.30 ms (1)
+Jun 09 21:32:36 symfony [info] {sfWebResponse} Send content (35354 o)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:34:04 symfony [info] {sfPatternRouting} Match route "register_success" (/register_success) for /register_success with parameters array (  'module' => 'Register',  'action' => 'success',)
+Jun 09 21:34:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:34:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:34:04 symfony [info] {RegisterActions} Call "RegisterActions->executeSuccess()"
+Jun 09 21:34:04 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php"
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:34:12 symfony [info] {sfPatternRouting} Match route "register_success" (/register_success) for /register_success with parameters array (  'module' => 'Register',  'action' => 'success',)
+Jun 09 21:34:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:34:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:34:12 symfony [info] {RegisterActions} Call "RegisterActions->executeSuccess()"
+Jun 09 21:34:12 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/Register/templates/successSuccess.php"
+Jun 09 21:34:12 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:34:12 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:34:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:34:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:34:12 symfony [info] {sfWebDebugLogger} Configuration 2.00 ms (9)
+Jun 09 21:34:12 symfony [info] {sfWebDebugLogger} Factories 19.27 ms (1)
+Jun 09 21:34:12 symfony [info] {sfWebDebugLogger} Action "Register/success" 0.24 ms (1)
+Jun 09 21:34:12 symfony [info] {sfWebDebugLogger} View "Success" for "Register/success" 5.68 ms (1)
+Jun 09 21:34:12 symfony [info] {sfWebResponse} Send content (35407 o)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jun 09 21:34:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'ViewPost',  'action' => 'index',)
+Jun 09 21:34:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 21:34:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 21:34:18 symfony [info] {ViewPostActions} Call "ViewPostActions->executeIndex()"
+Jun 09 21:34:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 09 21:34:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content AS p__content, p.date AS p__date, p.state AS p__state, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at, p.slug AS p__slug FROM post p WHERE (p.state = ?) - (Publicado)
+Jun 09 21:34:18 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/modules/ViewPost/templates/indexSuccess.php"
+Jun 09 21:34:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (1)
+Jun 09 21:34:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (2)
+Jun 09 21:34:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (3)
+Jun 09 21:34:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.email AS c__email, c.url AS c__url, c.comment AS c__comment, c.state AS c__state, c.user_id AS c__user_id, c.post_id AS c__post_id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM comment c WHERE (c.post_id = ?) - (4)
+Jun 09 21:34:18 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:34:18 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_frontend/templates/layout.php"
+Jun 09 21:34:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 09 21:34:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 21:34:18 symfony [info] {sfWebDebugLogger} Configuration 74.55 ms (11)
+Jun 09 21:34:18 symfony [info] {sfWebDebugLogger} Factories 20.11 ms (1)
+Jun 09 21:34:18 symfony [info] {sfWebDebugLogger} Action "ViewPost/index" 94.11 ms (1)
+Jun 09 21:34:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+Jun 09 21:34:18 symfony [info] {sfWebDebugLogger} View "Success" for "ViewPost/index" 33.87 ms (1)
+Jun 09 21:34:19 symfony [info] {sfWebResponse} Send content (52720 o)

@@ -1,0 +1,3 @@
+<td colspan="10">
+  <?php echo __('%%id%% - %%name%% - %%email%% - %%url%% - %%comment%% - %%state%% - %%user_id%% - %%post_id%% - %%created_at%% - %%updated_at%%', array('%%id%%' => link_to($comment->getId(), 'comment_edit', $comment), '%%name%%' => $comment->getName(), '%%email%%' => $comment->getEmail(), '%%url%%' => $comment->getUrl(), '%%comment%%' => $comment->getComment(), '%%state%%' => $comment->getState(), '%%user_id%%' => $comment->getUserId(), '%%post_id%%' => $comment->getPostId(), '%%created_at%%' => false !== strtotime($comment->getCreatedAt()) ? format_date($comment->getCreatedAt(), "f") : '&nbsp;', '%%updated_at%%' => false !== strtotime($comment->getUpdatedAt()) ? format_date($comment->getUpdatedAt(), "f") : '&nbsp;'), 'messages') ?>
+</td>

@@ -1,0 +1,49 @@
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/adminBlog/guard/users/filter.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/adminBlog/guard/users/batch.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/adminBlog/guard/users/new.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/adminBlog/guard/users.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/adminBlog/guard/users/:id/edit.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/adminBlog/guard/users/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/adminBlog/guard/users/:id/:action.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/adminBlog/guard/users/:action/action.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_filter" (/adminBlog/guard/groups/filter.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_batch" (/adminBlog/guard/groups/batch.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group" (/adminBlog/guard/groups.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_new" (/adminBlog/guard/groups/new.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_create" (/adminBlog/guard/groups.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_edit" (/adminBlog/guard/groups/:id/edit.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_update" (/adminBlog/guard/groups/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_delete" (/adminBlog/guard/groups/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_show" (/adminBlog/guard/groups/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_object" (/adminBlog/guard/groups/:id/:action.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_collection" (/adminBlog/guard/groups/:action/action.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_filter" (/adminBlog/guard/permissions/filter.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_batch" (/adminBlog/guard/permissions/batch.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission" (/adminBlog/guard/permissions.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_new" (/adminBlog/guard/permissions/new.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_create" (/adminBlog/guard/permissions.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_edit" (/adminBlog/guard/permissions/:id/edit.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_update" (/adminBlog/guard/permissions/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_delete" (/adminBlog/guard/permissions/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_show" (/adminBlog/guard/permissions/:id.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_object" (/adminBlog/guard/permissions/:id/:action.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_collection" (/adminBlog/guard/permissions/:action/action.:sf_format)
+Jun 09 20:13:40 symfony [info] {sfPatternRouting} Match route "homepage" (/adminBlog) for /adminBlog with parameters array (  'module' => 'mpReality',  'action' => 'dashboard',)
+Jun 09 20:13:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:13:40 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 09 20:13:40 symfony [info] {sfBasicSecurityFilter} Action "mpReality/dashboard" requires authentication, forwarding to "sfGuardAuth/signin"
+Jun 09 20:13:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 09 20:13:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 09 20:13:40 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Jun 09 20:13:40 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_backend/modules/sfGuardAuth/templates/signinSuccess.php"
+Jun 09 20:13:40 symfony [info] {sfPartialView} Render "/home/conates/proyecto/personal/shimano/apps/blog_backend/modules/mpReality/templates/_login.php"
+Jun 09 20:13:40 symfony [info] {sfPHPView} Decorate content with "/home/conates/proyecto/personal/shimano/apps/blog_backend/templates/layout.php"
+Jun 09 20:13:40 symfony [info] {sfPHPView} Render "/home/conates/proyecto/personal/shimano/apps/blog_backend/templates/layout.php"
+Jun 09 20:13:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Jun 09 20:13:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 09 20:13:40 symfony [info] {sfWebResponse} Send content (52546 o)
